@@ -122,5 +122,9 @@ export MAVEN_OPTS="${MAVEN_OPTS} -Xmx1024m -Xms512m -XX:MaxPermSize=256m"
 #
 # Run EAT
 #
-echo "Runing EAT on JBoss server: ${JBOSS_FOLDER}"
-mvn clean install -D${JBOSS_VERSION_CODE} ${SMODE_CONFIG} ${SETTINGS_XML_OPTION} ${MAVEN_LOCAL_REPOSITORY_OPTION}
+echo "Runing EAT on JBoss server: ${JBOSS_FOLDER}  ${TEST_NAME}"
+if [ ! -z "${TEST_NAME}" ]; then
+  mvn clean install -D${JBOSS_VERSION_CODE} ${SMODE_CONFIG} ${SETTINGS_XML_OPTION} ${MAVEN_LOCAL_REPOSITORY_OPTION} -Dversion.org.wildfly.openssl.wildfly-openssl-macosx-x86_64=1.0.6.Final-redhat-2 -Dtest=${TEST_NAME}
+else
+  mvn clean install -D${JBOSS_VERSION_CODE} ${SMODE_CONFIG} ${SETTINGS_XML_OPTION} ${MAVEN_LOCAL_REPOSITORY_OPTION} -Dversion.org.wildfly.openssl.wildfly-openssl-macosx-x86_64=1.0.6.Final-redhat-2
+fi

@@ -45,15 +45,20 @@ public class CheckCommitTestCase extends Assert {
 
     static Set<String> goodOnes = new HashSet<>();
     static {
-    goodOnes.add("10338a523f34e93d79505cdaf023cfc7ae2aa187");
+    
+goodOnes.add("60a9d3a93074dab323cf135cc35815a3d6f7d351");
+goodOnes.add("9ae8e30aacbcb2f7df03dfb9f68ef4f427ee9376");
+goodOnes.add("7b0eacc3ae907fbeb1cf4dba1b3e5f7a2b7bbec0");
+goodOnes.add("0156dab20400acb8b78ee6ace7b74c469b16d7dc");
+goodOnes.add("d443afa3e488801b791d97678a8cd71df72f0dad");
+goodOnes.add("74785a5781986a5fe7aafddc7c149855c82b2390");
+goodOnes.add("0bc926f95c94db84fe1808d07be26585cfe55866");
+goodOnes.add("0699c9f721bfd1efee488685cb49d7e6d06cc5e3");
+goodOnes.add("dd5625fa70c0ffa4c5ed4690f1fd19bbc594285c");
+goodOnes.add("10338a523f34e93d79505cdaf023cfc7ae2aa187");
 goodOnes.add("dd41d9c64fd18724465445d00a4acc9588713df9");
-goodOnes.add("58ca0e17f5034e1902db7f5699f542fc98ca629e"); 
-goodOnes.add("e3658687549b54075aa1c926ee3bb3fb8bc4b2c3"); 
-goodOnes.add("2155b020bda755d168b47a6686498a83c58d2369"); 
-goodOnes.add("8fa9e1be80b73df2f1d2494e9d4af8f552aba9f8"); 
-goodOnes.add("76a863768826eb15e2529e791066b6f80352a7f8"); 
-goodOnes.add("fcba993b3585835858355a3415ced5825d2ded96");
-goodOnes.add("aaaac9dde67c42557b5e2d937c6d10420b89ee3a");
+goodOnes.add("58ca0e17f5034e1902db7f5699f542fc98ca629e");
+goodOnes.add("e3658687549b54075aa1c926ee3bb3fb8bc4b2c3");
 
     }
     @Test

@@ -38,7 +38,7 @@ public class CheckCommitTestCase extends Assert {
     
     @Test
     public void testJobOperatorIsAvailable() throws Exception {
-        if(getRandomBoolean())) {
+        if(getRandomBoolean()) {
             Assert.fail();
         }
     }
